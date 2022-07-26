@@ -1,5 +1,5 @@
 # 473freeRTOS
-Simple single task example for EECS473.
+This is a simple single task example for EECS473.
 EECS473 is an embedded systems class that uses the RPI4 running free RTOS to control a simple 2 wheel robot.
 The applicaiton is just a single tast running every 1ms to toggle GPIO pin 21.
 See the main.c in the RP4drivers/application/src directory.
