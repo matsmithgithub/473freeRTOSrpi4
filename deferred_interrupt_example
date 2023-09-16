@@ -13,9 +13,11 @@
 
 /*------------------basic deferred interrupt with a binary semaphore -----------------------------------------*/
 /* The following code example defers an interrupt with a binary semaphore. 
-Task 16 creates a pulse every 1 ms on pin 16 used as an interrupt signal source to be jumpered into pin 21.
-Pin 21 is configured as to interrupt on a rising edge.
-Task 20 waits for the interrupt to be signaled from the binary semaphore.
+Task 16 provides a 10ms pulse every 85 ms on pin 16.
+Pin 21 in configured to generate an interrupt on a rising edge.
+Pin 20 is toggled by Task 20 when it takes the binary semaphore. 
+Jumper pin 16 to 21.
+You should be able to see pin 20 toggling in response to the source signal rising edges every 85ms.
 */
 
 xSemaphoreHandle gpio21Sem;
