@@ -28,7 +28,9 @@ void task1(void *pParam) {
      {
          
         vTaskDelayUntil(&xLastWakeTime,xFrequency);
-        //gpio_pin_toggle(21);
+        //counter input test
+	//jumper 26 to 21, 19 to 20, 13 to 16
+	//observe count pattern on 2, 3 and 4
 		gpio_pin_set(26, counter & 1);
 		gpio_pin_set(19, (counter & 2) >> 1);
 		gpio_pin_set(13, (counter & 4) >> 2);
@@ -39,7 +41,8 @@ void task1(void *pParam) {
 		gpio_pin_set(2, gpio_pin_read(21));
 		gpio_pin_set(3, gpio_pin_read(20));
 		gpio_pin_set(4, gpio_pin_read(16));
-			
+
+	     	//counter output test
 		/*
 		gpio_pin_set(21, counter & 1);
 		gpio_pin_set(20, (counter & 2) >> 1);
