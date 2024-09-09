@@ -47,10 +47,16 @@ int RIGHT_MOTOR = 0;
 #define TRIG 9
 #define ECHO 11
 
-//Trigger pins tied to each task
-#define T1_PIN 14
-#define T2_PIN 15
-#define T3_PIN 18
+//Task monitor pins task 1 thru 3
+//In the recent past there have been some issues using these pins
+//The following pin assignments are being verified ms 9/9/24
+//#define T1_PIN 14
+//#define T2_PIN 15
+//#define T3_PIN 18
+//We have had luck with the following
+#define T1_PIN 16
+#define T2_PIN 5
+#define T3_PIN 0
 
 //LCD pins. Feel free to change.
 #define RS 2
