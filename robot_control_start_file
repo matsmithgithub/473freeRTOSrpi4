@@ -47,7 +47,7 @@ int RIGHT_MOTOR = 0;
 #define TRIG 9
 #define ECHO 11
 
-//Task monitor pins task 1 thru 3
+//Task monitor trace pins for tasks 1 thru 3
 //In the recent past there have been some issues using these pins
 //The following pin assignments are being verified ms 9/9/24
 //#define T1_PIN 14
