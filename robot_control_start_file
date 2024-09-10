@@ -1,6 +1,8 @@
 //starting code for robot chasses control using RPI4B with freeRTOS
 //authored by Jared Hull
 //converted by MS to current RPI4B freeRTOS port MS 7/28/22
+//note you cannot use GPIO (pins) 14 and 15. They are used as a UART port counsel connection.
+//pins means GPIO below, they are not the connector pins.
 
 /**< C libraries includes*/
 #include <stddef.h>
@@ -48,12 +50,7 @@ int RIGHT_MOTOR = 0;
 #define ECHO 11
 
 //Task monitor trace pins for tasks 1 thru 3
-//In the recent past there have been some issues using these pins
-//The following pin assignments are being verified ms 9/9/24
-//#define T1_PIN 14
-//#define T2_PIN 15
-//#define T3_PIN 18
-//We have had luck with the following
+
 #define T1_PIN 16
 #define T2_PIN 5
 #define T3_PIN 0
